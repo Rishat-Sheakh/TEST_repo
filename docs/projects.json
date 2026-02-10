@@ -1,0 +1,23 @@
+[
+  {
+    "id": "network-visualizer",
+    "title": "Network Visualizer",
+    "description": "A small tool to visualize network topologies and traffic flows.",
+    "link": "#",
+    "image": "https://via.placeholder.com/600x360?text=Network+Visualizer"
+  },
+  {
+    "id": "router-config-helper",
+    "title": "Router Config Helper",
+    "description": "Simplifies generating router configs and templates for common setups.",
+    "link": "#",
+    "image": "https://via.placeholder.com/600x360?text=Router+Config+Helper"
+  },
+  {
+    "id": "mini-web-app",
+    "title": "Mini Web App",
+    "description": "Example web app demonstrating frontend + backend routing.",
+    "link": "#",
+    "image": "https://via.placeholder.com/600x360?text=Mini+Web+App"
+  }
+]
