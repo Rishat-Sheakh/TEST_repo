@@ -135,25 +135,28 @@ body>:not(.floating-bg){
 
 .site-header .container{
   display:flex;
-  justify-content:space-between;
+  flex-direction:column;
   align-items:center;
+  gap:24px;
 }
 
 .site-title{
   margin:0;
-  font-size:24px;
+  font-size:28px;
   background:linear-gradient(135deg,var(--accent),var(--accent-light));
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
   background-clip:text;
   font-weight:800;
   letter-spacing:-0.5px;
+  text-align:center;
 }
 
 .nav{
   display:flex;
   gap:32px;
   margin:0;
+  justify-content:center;
 }
 
 .nav a{
@@ -287,7 +290,7 @@ body>:not(.floating-bg){
 /* Projects Grid */
 .grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  grid-template-columns:repeat(3,1fr);
   gap:24px;
   margin-top:32px;
 }
@@ -367,6 +370,13 @@ body>:not(.floating-bg){
 }
 
 /* Responsive Design */
+@media (max-width:1200px){
+  .grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+  }
+}
+
 @media (max-width:768px){
   .site-header .container{
     flex-direction:column;
@@ -406,7 +416,7 @@ body>:not(.floating-bg){
   }
 
   .grid{
-    grid-template-columns:1fr;
+    grid-template-columns:repeat(2,1fr);
     gap:16px;
   }
 
@@ -417,7 +427,7 @@ body>:not(.floating-bg){
 
 @media (max-width:480px){
   .site-title{
-    font-size:20px;
+    font-size:22px;
   }
 
   .nav{
@@ -447,6 +457,11 @@ body>:not(.floating-bg){
   .projects h3,
   .contact h3{
     font-size:20px;
+  }
+
+  .grid{
+    grid-template-columns:1fr;
+    gap:12px;
   }
 
   .card h4{
